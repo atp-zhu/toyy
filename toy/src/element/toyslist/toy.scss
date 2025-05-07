@@ -1,0 +1,77 @@
+.alltoy{
+  .top{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    .title{
+      line-height: 60px;
+      font-size: 26px;
+    }
+    .right{
+      width: 400px;
+      height: 60px;
+    }
+  }
+  .cen{
+    margin-top: 15px;
+    display: flex;
+    .line{
+      width: 150px;
+      border-bottom: 1px solid #a5c926;
+    }
+    .linee{
+      width: 1050px;
+      border-bottom: 1px solid rgb(232, 230, 230);
+    }
+  }
+  .bot{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    a {
+      text-decoration: none;
+    }
+    .list{
+      width: 280px;
+      height: 350px;
+      background-color: #ffffff;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      
+      &:hover{
+        transform: scale(1.05);
+        z-index: 2;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      }
+
+      img{
+        width: 160px;
+        height: 180px;
+        margin-top: 15px;
+      }
+      p{
+        padding-top: 20px;
+        color: black;
+      }
+      .price{
+        height: 30px;
+        margin-top: 15px;
+        background-color: #a5c926;
+        border-radius: 50px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 14px;
+        color: white;
+        margin-left: 70px;
+      }
+    }
+  }
+}

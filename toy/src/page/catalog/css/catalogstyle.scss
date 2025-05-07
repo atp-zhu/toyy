@@ -1,0 +1,40 @@
+.catalogstyle{
+  
+  .alltoys{
+    .right{
+      .rig{
+        display: flex;
+        justify-content: space-between;
+        line-height: 60px;
+        cursor: pointer;
+        div{
+          font-weight: 300;
+          margin-top: 10px;
+          line-height: 40px;
+          height: 40px;
+          padding: 0 15px;
+          border-radius: 30px;
+          position: relative;
+          
+          &:hover{
+            &::after {
+              content: '';
+              position: absolute;
+              left: 15px;
+              right: 15px;
+              bottom: 5px;
+              height: 1px;
+              background-color: #333;
+              transition: all 0.3s ease;
+            }
+          }
+          
+          &.active{
+            background-color: #a5c926;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
